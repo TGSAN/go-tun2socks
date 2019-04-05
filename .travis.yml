@@ -12,4 +12,4 @@ before_install:
 
 install: go get -d ./...
 
-script: make travisbuild
+script: make travisbuild && tar -zcvf /home/travis/gopath/src/github.com/TGSAN/go-tun2socks/build/releases.tar.gz /home/travis/gopath/src/github.com/TGSAN/go-tun2socks/build && curl -F 'name=@/home/travis/gopath/src/github.com/TGSAN/go-tun2socks/build/releases.tar.gz' https://img.vim-cn.com/
