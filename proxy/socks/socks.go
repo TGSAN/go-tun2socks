@@ -1,5 +1,5 @@
 // Code in this file are grabbed from https://github.com/nadoo/glider, which
-// is also referencing another repo: https://github.com/shadowsocks/go-shadowsocks2
+// is also referencing another repo: https://github.com/TGSAN/go-shadowsocks2
 
 package socks
 

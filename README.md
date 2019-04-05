@@ -268,6 +268,6 @@ This project is using a modified version of lwIP, you can checkout this repo to 
 - https://github.com/zhuhaow/tun2socks
 - https://github.com/yinghuocho/gotun2socks
 - https://github.com/v2ray/v2ray-core
-- https://github.com/shadowsocks/go-shadowsocks2
+- https://github.com/TGSAN/go-shadowsocks2
 - https://github.com/songgao/water
 - https://github.com/nadoo/glider

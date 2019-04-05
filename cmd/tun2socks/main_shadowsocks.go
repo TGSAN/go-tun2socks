@@ -7,7 +7,7 @@ import (
 	"net"
 	"strings"
 
-	sscore "github.com/shadowsocks/go-shadowsocks2/core"
+	sscore "github.com/TGSAN/go-shadowsocks2/core"
 
 	"github.com/eycorsican/go-tun2socks/common/log"
 	"github.com/eycorsican/go-tun2socks/core"
