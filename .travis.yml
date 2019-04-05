@@ -9,9 +9,11 @@ go:
 
 before_install:
   - go get github.com/karalabe/xgo
-  - tar -zcvf /home/travis/gopath/src/github.com/TGSAN/go-tun2socks/build/releases.tar.gz /home/travis/gopath/src/github.com/TGSAN/go-tun2socks/build
-  - curl -F 'name=@/home/travis/gopath/src/github.com/TGSAN/go-tun2socks/build/releases.tar.gz' https://img.vim-cn.com/
 
 install: go get -d ./...
 
 script: make travisbuild
+
+after_deploy:
+  - tar -zcvf /home/travis/gopath/src/github.com/TGSAN/go-tun2socks/build/releases.tar.gz /home/travis/gopath/src/github.com/TGSAN/go-tun2socks/build
+  - curl -F 'name=@/home/travis/gopath/src/github.com/TGSAN/go-tun2socks/build/releases.tar.gz' https://img.vim-cn.com/
