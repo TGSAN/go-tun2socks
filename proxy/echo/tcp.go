@@ -3,7 +3,7 @@ package echo
 import (
 	"net"
 
-	"github.com/eycorsican/go-tun2socks/core"
+	"github.com/TGSAN/go-tun2socks/core"
 )
 
 var bufSize = 10 * 1024

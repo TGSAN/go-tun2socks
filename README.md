@@ -95,8 +95,8 @@ Usage of tun2socks:
 `go-tun2socks` is using `cgo`, thus a C compiler is required.
 
 ```sh
-go get github.com/eycorsican/go-tun2socks
-cd $GOPATH/src/github.com/eycorsican/go-tun2socks
+go get github.com/TGSAN/go-tun2socks
+cd $GOPATH/src/github.com/TGSAN/go-tun2socks
 go get -d ./...
 make clean && make build
 ./build/tun2socks -h
@@ -111,8 +111,8 @@ An alternative way to build (or cross compile) tun2socks is to use [`xgo`](https
 # install xgo
 go get github.com/karalabe/xgo
 
-go get github.com/eycorsican/go-tun2socks
-cd $GOPATH/src/github.com/eycorsican/go-tun2socks
+go get github.com/TGSAN/go-tun2socks
+cd $GOPATH/src/github.com/TGSAN/go-tun2socks
 go get -d ./...
 make clean && make release
 ls ./build
@@ -230,7 +230,7 @@ route add 1.2.3.4 192.168.0.1 metric 5
 
 ## Development
 
-The core part of this project is the `core` package, it focuses on `tun2socks`'s `2` part, the core package has fully IPv4/IPv6, TCP/UDP support, and only depends on lwIP (including a few [platform-dependent code](https://github.com/eycorsican/go-tun2socks/tree/master/core/src/custom)) and Go's standard library. On the one hand, IP packets input to or output from the `lwIP Stack` that initialized by `core.NewLWIPStack()`, on the other hand, TCP/UDP connections would "socksified" by the core package and can be handled by your own `core.TCPConnHandler`/`core.UDPConnHandler` implementation.
+The core part of this project is the `core` package, it focuses on `tun2socks`'s `2` part, the core package has fully IPv4/IPv6, TCP/UDP support, and only depends on lwIP (including a few [platform-dependent code](https://github.com/TGSAN/go-tun2socks/tree/master/core/src/custom)) and Go's standard library. On the one hand, IP packets input to or output from the `lwIP Stack` that initialized by `core.NewLWIPStack()`, on the other hand, TCP/UDP connections would "socksified" by the core package and can be handled by your own `core.TCPConnHandler`/`core.UDPConnHandler` implementation.
 
 As for the `tun` part, different OS may has it's own interfaces.
 
@@ -252,11 +252,11 @@ Sample code for creating a `lwIP Stack` and doing IP packets inputing/outputing,
 
 ## Creating a Framework for iOS
 
-https://github.com/eycorsican/go-tun2socks-ios
+https://github.com/TGSAN/go-tun2socks-ios
 
 ## Creating an AAR library for Android
 
-https://github.com/eycorsican/go-tun2socks-android
+https://github.com/TGSAN/go-tun2socks-android
 
 ## This project is using lwIP 
 

@@ -4,8 +4,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/eycorsican/go-tun2socks/common/log"
-	"github.com/eycorsican/go-tun2socks/common/packet"
+	"github.com/TGSAN/go-tun2socks/common/log"
+	"github.com/TGSAN/go-tun2socks/common/packet"
 )
 
 type icmpFilter struct {
